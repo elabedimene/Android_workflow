@@ -1,0 +1,68 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textViewCamunda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:text=" ISI DIGITAL"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        style="@style/parent.TextLayout"
+        android:layout_marginTop="@dimen/signup_text_margin_top">
+
+        <EditText
+            android:id="@+id/Email"
+            style="@style/modifiedEditText"
+            android:hint="username"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        style="@style/parent.TextLayout"
+        android:layout_marginTop="@dimen/signup_text_margin_top">
+
+        <EditText
+            android:id="@+id/Password"
+            style="@style/modifiedEditText"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/cirLoginButton"
+        style="@style/loginButton"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+
+
+
+
+
+</LinearLayout>
